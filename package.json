@@ -1,6 +1,6 @@
 {
   "name": "@basalt-lab/basalt-authorization",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Authorization of Basalt Framework",
   "main": "Build/App.js",
   "types": "Build/App.d.ts",
