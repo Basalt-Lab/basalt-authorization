@@ -1,8 +1,8 @@
-import { IRolePermissions } from "@/Interfaces/IRolePermissions";
-import { IRawRolePermission } from '@/Interfaces/IRawRolePermission';
+import { IBasaltRolePermissions } from "@/Interfaces/IBasaltRolePermissions";
+import { IBasaltRawRolePermission } from '@/Interfaces/IBasaltRawRolePermission';
 
-export class RolesPermission {
-    private _rolesPermission: IRolePermissions = {};
+export class BasaltRolesPermission {
+    private _rolesPermission: IBasaltRolePermissions = {};
 
     /**
      * Add a role with permissions
@@ -138,7 +138,7 @@ export class RolesPermission {
     /**
      * Get all permissions of multiple roles
      */
-    public get rolesPermission(): IRolePermissions {
+    public get rolesPermission(): IBasaltRolePermissions {
         return this._rolesPermission;
     }
 
@@ -147,7 +147,7 @@ export class RolesPermission {
      * Set all roles with permissions
      * @param value
      */
-    public set rolesPermission(value: IRolePermissions) {
+    public set rolesPermission(value: IBasaltRolePermissions) {
         this._rolesPermission = value;
     }
 
@@ -156,14 +156,14 @@ export class RolesPermission {
      * @param rawRoleAndPermission
      * @throws Error if one of the roles already exists
      */
-    public groupRoleWithPermissions(rawRoleAndPermission: IRawRolePermission[]): void {
-        const uniqueRoles: string[] = Array.from(new Set(rawRoleAndPermission.map((item: IRawRolePermission) => item.role)));
+    public groupRoleWithPermissions(rawRoleAndPermission: IBasaltRawRolePermission[]): void {
+        const uniqueRoles: string[] = Array.from(new Set(rawRoleAndPermission.map((item: IBasaltRawRolePermission) => item.role)));
         uniqueRoles.forEach((role: string): void => {
             if(this._rolesPermission[role])
                 throw new Error(`Role ${role} already exists`);
             this._rolesPermission[role] = rawRoleAndPermission
-                .filter((item: IRawRolePermission): boolean => item.role === role)
-                .map((item: IRawRolePermission) => item.permission);
+                .filter((item: IBasaltRawRolePermission): boolean => item.role === role)
+                .map((item: IBasaltRawRolePermission) => item.permission);
         });
     }
 
@@ -205,7 +205,7 @@ export class RolesPermission {
      * Constructor
      * @param rolesPermission
      */
-    constructor(rolesPermission: IRolePermissions = {}) {
+    constructor(rolesPermission: IBasaltRolePermissions = {}) {
         this._rolesPermission = rolesPermission;
     }
 }

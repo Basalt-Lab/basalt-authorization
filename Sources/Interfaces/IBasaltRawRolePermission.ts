@@ -1,4 +1,4 @@
-export interface IRawRolePermission {
+export interface IBasaltRawRolePermission {
     role: string;
     permission: string;
 }
