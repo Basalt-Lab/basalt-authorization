@@ -1,2 +1,2 @@
 export * from '@/Interfaces';
-export * from '@/RolesPermission';
+export * from '@/BasaltRolesPermission';
