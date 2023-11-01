@@ -1,2 +1,3 @@
-export * from './IBasaltRolePermissions';
+export * from './IBasaltRolesPermissions';
 export * from './IBasaltRawRolePermission';
+export * from './IBasaltAuthorization';

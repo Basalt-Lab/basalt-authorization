@@ -19,25 +19,7 @@
 
 ## 🌟 Features
 
-- `BasaltRolesPermission` harnesses a comprehensive suite of functionalities for sophisticated and secure role and permission management within your application:
-
-  - **Role Validation and Addition**: Enables the addition of new roles with their respective permissions, ensuring no duplicates to maintain the integrity of the access control system.
-
-  - **Flexible Permission Management**: Facilitates adding permissions to specific roles, ensuring no redundant permissions are assigned. Permissions can be added individually or in bulk for efficient management.
-
-  - **Secure Role and Permission Removal**: Provides the tools for safely removing roles and permissions, ensuring these elements exist before proceeding with their deletion.
-
-  - **Role Information Retrieval**: Easily accesses all roles existing within the system, allowing for convenient retrieval and management of roles for various operational needs.
-
-  - **Extraction of Role's Permissions**: Allows for retrieving all permissions associated with a specific role, aiding in determining the scope of a role's capabilities.
-
-  - **Intelligent Grouping of Roles and Permissions**: Efficiently organizes and associates multiple permissions with respective roles, utilizing a grouping approach for streamlined configuration.
-
-  - **Permission Verification**: Checks whether a role possesses certain permissions, allowing for quick and accurate confirmation of access rights.
-
-  - **Role Control Integrity**: Ensures all operations concerning roles and permissions are conducted with integrity checks, preventing inconsistent states in access management.
-
-  These features, collectively, ensure that `BasaltRolesPermission` offers a comprehensive, secure, and highly adaptable role and permission management experience, catering to diverse authentication needs and operational contexts.
+You can find the list of features in the [documentation](https://basalt-lab.github.io/basalt-doc/index.html).
 
 ## 🔧 Installation
 
