@@ -1,5 +1,5 @@
-import { IBasaltRolesPermissions } from '@/Interfaces/IBasaltRolesPermissions';
-import { IBasaltRawRolePermission } from '@/Interfaces/IBasaltRawRolePermission';
+import { IBasaltRolesPermissions } from '@/Interface/IBasaltRolesPermissions';
+import { IBasaltRawRolePermission } from '@/Interface/IBasaltRawRolePermission';
 
 export interface IBasaltAuthorization {
     /**

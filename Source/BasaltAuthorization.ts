@@ -1,4 +1,4 @@
-import { IBasaltRolesPermissions, IBasaltRawRolePermission, IBasaltAuthorization } from '@/Interfaces';
+import { IBasaltRolesPermissions, IBasaltRawRolePermission, IBasaltAuthorization } from '@/Interface';
 
 export class BasaltAuthorization implements IBasaltAuthorization {
     /**
