@@ -39,5 +39,9 @@
     "ts-jest": "^29.1.1",
     "tsc-alias": "^1.8.8",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "better-sqlite3": "^9.2.2",
+    "knex": "^3.1.0"
   }
 }
