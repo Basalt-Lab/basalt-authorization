@@ -1,5 +1,5 @@
 import { IBasaltRolesPermissions } from '@/Interface/IBasaltRolesPermissions';
-import { IBasaltRawRolePermission } from '@/Interface/IBasaltRawRolePermission';
+import { IBasaltPairRolePermission } from '@/Interface/IBasaltPairRolePermission';
 
 export interface IBasaltAuthorization {
     /**
@@ -91,10 +91,10 @@ export interface IBasaltAuthorization {
 
     /**
      * Groups roles with their respective permissions from a list of raw role-permission objects.
-     * @param {IBasaltRawRolePermission[]} rawRoleAndPermission - An array of objects containing role and permission properties.
+     * @param {IBasaltPairRolePermission[]} rawRoleAndPermission - An array of objects containing role and permission properties.
      * @throws {Error} If any role already exists in the current mapping.
      */
-    groupRoleWithPermissions(rawRoleAndPermission: IBasaltRawRolePermission[]): void;
+    groupRoleWithPermissions(rawRoleAndPermission: IBasaltPairRolePermission[]): void;
 
     /**
      * Checks if any of the provided permissions exist in any role.
